@@ -19,7 +19,7 @@ def random_swap(a, b):
 if __name__ == '__main__':
 
     listToSort = [9, 10, 314, 0, 0, 1, 5, 99, 69, 420, 1, 2, 3, 4]
-    # listToSort = [3, 4]
+    # listToSort = [99, 1, 3]
 
 
 
@@ -37,24 +37,27 @@ if __name__ == '__main__':
         # I forgot what this does
         for blah in listToSort:
             size = size + 1
-            print(f'The count is {size} uh uh uh...')
-        i = 0
+            # print(f'The count is {size} uh uh uh...')
+        theIi = 0
 
         # Do some magic and wee wee wee the numbers around
-        while i < size:
+        while theIi < size - 1:
             foo = -1
-            while foo == i:
+            while True:
                 foo = random.randint(0, size - 1)
-
-            a = listToSort[i]
+                if foo != theIi:
+                    break
+                # print(f'My Foo: {foo}')
+            # print(f'foo {foo} i {theIi}')
+            a = listToSort[theIi]
             b = listToSort[foo]
             # print(f'a, b before swap: {a}, {b}')
             a, b = random_swap(a, b)
             # print(f'a, b after swap: {a}, {b}')
 
-            listToSort[i] = a
+            listToSort[theIi] = a
             listToSort[foo] = b
-            i += 1
+            theIi += 1
 
         anotherDamnList = []
         anotheri = 0
