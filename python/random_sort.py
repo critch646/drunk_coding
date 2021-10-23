@@ -29,7 +29,7 @@ if __name__ == '__main__':
     # Do the sort thing
     while not isSorted:
         print('----------------------------------------------------------------------------------------------------------')
-        print(f'Attempt Number {attempt}')
+        print(f'Attempt Number {attempt:,d}')
         print('----------------------------------------------------------------------------------------------------------')
 
         size = 0  # A dumb variable
