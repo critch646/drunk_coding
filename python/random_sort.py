@@ -19,7 +19,7 @@ def random_swap(a, b):
 if __name__ == '__main__':
 
     listToSort = [9, 10, 314, 0, 0, 1, 5, 99, 69, 420, 1, 2, 3, 4]
-    # listToSort = [99, 1, 3]
+    # listToSort = [99, 1, 3, 80]
 
 
 
